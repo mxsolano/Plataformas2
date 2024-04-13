@@ -14,3 +14,9 @@ monitoreo_proceso(){
     $comando & echo "Proceso $nombre_proceso inciado"
   fi
 }
+
+while true; do
+  monitoreo_proceso
+  sleep 5 #el script espera 5 segundos entre cada verificacion
+done
+exit 0
